@@ -28,33 +28,24 @@ textarea { resize: vertical; }
 
 }
 body { background-color: #000; width: 1024px; margin: 0 auto; font-family: 'NovecentowideBookBold', sans-serif;}
-header .primary { height: 32px; float: right; background: #c70c46; font-size: 10.5px; }
-header .primary ul { padding: 0; margin: 0; }
+header .primary { height: 32px; float: right; background: #c70c46; font-size: 12px; }
+header .primary ul { padding: 0; margin: 0; text-transform: uppercase; }
 header .primary ul li, header .primary ul .slash { float: left; color: #fff; height: 32px; line-height: 3em; }
 header .primary ul li a { color: #fff; text-decoration: none; margin: 0 4px; padding: 10px 0; }
 header .primary ul li a:hover { color: #000; -webkit-transition: color 200ms linear; -moz-transition: color 200ms linear; -ms-transition: color 200ms linear; -o-transition: color 200ms linear; transition: color 200ms linear; }
 header .primary ul li:first-child { background: url(../images/primary-middle-bg.png) repeat-x; font-size: 13px; line-height: 2.5em; }
 header .primary ul li:first-child:before, header .primary ul li:first-child:after { display: inline-block; width: 18px; height: 32px; background: url(../images/primary-left-bg.png) no-repeat; content: ""; position: absolute; margin-left: -18px; }
-header .primary ul li:first-child:after { background: url(../images/primary-right-bg.png) no-repeat; margin-right: -18px;}
-header .primary ul li:first-child a { padding-right: 18px; }
+header .primary ul li:first-child:after { display: inline; background: url(../images/primary-right-bg.png) no-repeat; }
+header .primary ul li:first-child a { padding-right: 18px; margin-right: 0; }
 header .primary ul li:last-child { margin-left: 10px; }
 header .primary ul li:last-child:before { border-top: 5px solid transparent; border-bottom: 5px solid 
-transparent; border-left: 5px solid #fff; display: block; position: absolute; content: ""; margin-top: 10px; margin-left: -3px; }
+transparent; border-left: 5px solid #fff; display: block; position: absolute; content: ""; margin-top: 12px; margin-left: -3px; }
 header h1 { margin: 0; padding: 0; display: inline; }
 header h1 a { width: 150px; height: 106px; display: block; background: url(../images/logo-top.png) no-repeat; margin: 16px 0 0 45px; padding: 0; float: left; }
 
 header .secondary { float: right;  font-size: 12px; margin-top: 65px; margin-right: 20px; }
-header .secondary ul { padding: 0; margin: 0; }
-header .secondary ul li { line-height: 13px; }
-header .secondary ul li { float: left; color: #fff; height: 13px; }
-
-/*
-header .secondary ul li:before, header .secondary ul li:after { display: inline-block; width: 8px; height: 13px; background: url(../images/secondary-slash-left.png) no-repeat; content: ""; position: absolute; margin-left: -8px; }
-header .secondary ul li:first-child:before, header .secondary ul li:after { background: none; }
-header .secondary ul li:hover { background-color: #d20a49; }
-header .secondary ul li:hover:before, header .secondary ul li:hover:after { background: url(../images/secondary-left-bg.png) no-repeat; margin-left: -8px; }
-header .secondary ul li:hover:after { background: url(../images/secondary-right-bg.png) no-repeat; margin-right: -8px;}
-*/
+header .secondary ul { padding: 0; margin: 0; text-transform: uppercase; }
+header .secondary ul li { float: left; color: #fff; height: 13px; line-height: 13px; }
 header .secondary ul li a { color: #fff; text-decoration: none; margin: 0 4px; padding-right: 10px; }
 
 
@@ -202,8 +193,6 @@ footer nav ul li a:hover, footer .extra-info li a:hover { color: #fc6a1f; -webki
 footer .extra-info { width: 210px; list-style: none; }
 footer .extra-info li:first-child { color: #c70c46; }
 footer .extra-info li a { position: relative; bottom: 1px; color: #6c6c6c; }
-
-.lt-ie9 header .primary { width: 650px; }
 
 .template-two header .secondary ul li:first-child { background-color: #d20a49; }
 .template-two #masthead { position: relative; }

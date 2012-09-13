@@ -52,16 +52,27 @@ jQuery(document).ready(function($){
         $(elem).height(minHeight); // set largest height
       }
       minHeight('footer ul')
+      
+      $(function(){
+			// Subnav jQuery
+  			if ($('#subnav').length > 0){
+  				$('#subnav li:first').addClass('first');
+  				$('#subnav li:last').addClass('last');
+  				$('#subnav li a').mouseover(function(){
+  					$(this).parent().prev().addClass('previous-current');
+  					$(this).parent().next().addClass('next-current');
+  				});
+  				$('#subnav li a').mouseout(function(){
+  					$(this).parent().prev().removeClass('previous-current');
+  					$(this).parent().next().removeClass('next-current');
+  					$('#subnav li.current_page_item').prev().addClass('previous-current');
+  					$('#subnav li.current_page_item').next().addClass('next-current');
+  				});
+  				$('#subnav li.current_page_item').prev().addClass('previous-current');
+  				$('#subnav li.current_page_item').next().addClass('next-current');
+  			}
+  		});
+      
   });
-  
-  /*
-  $(".primary ul li a")
-  .hover(function() {
-    $(this).stop().animate({ opacity: 0.1, }, 'fast');
-  }, function() {
-    $(this).stop().animate({ opacity: 1, }, 'fast');
-  });
-  */
-
   
 });
