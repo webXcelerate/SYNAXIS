@@ -42,17 +42,72 @@ header .primary ul li:last-child:before { border-top: 5px solid transparent; bor
 transparent; border-left: 5px solid #fff; display: block; position: absolute; content: ""; margin-top: 10px; margin-left: -3px; }
 header h1 { margin: 0; padding: 0; display: inline; }
 header h1 a { width: 150px; height: 106px; display: block; background: url(../images/logo-top.png) no-repeat; margin: 16px 0 0 45px; padding: 0; float: left; }
+
 header .secondary { float: right;  font-size: 12px; margin-top: 65px; margin-right: 20px; }
 header .secondary ul { padding: 0; margin: 0; }
 header .secondary ul li { line-height: 13px; }
 header .secondary ul li { float: left; color: #fff; height: 13px; }
 
+/*
 header .secondary ul li:before, header .secondary ul li:after { display: inline-block; width: 8px; height: 13px; background: url(../images/secondary-slash-left.png) no-repeat; content: ""; position: absolute; margin-left: -8px; }
 header .secondary ul li:first-child:before, header .secondary ul li:after { background: none; }
 header .secondary ul li:hover { background-color: #d20a49; }
 header .secondary ul li:hover:before, header .secondary ul li:hover:after { background: url(../images/secondary-left-bg.png) no-repeat; margin-left: -8px; }
 header .secondary ul li:hover:after { background: url(../images/secondary-right-bg.png) no-repeat; margin-right: -8px;}
+*/
 header .secondary ul li a { color: #fff; text-decoration: none; margin: 0 4px; padding-right: 10px; }
+
+
+
+/* Navigation CSS */
+
+  #subnav li:first-child { background-color: transparent; }
+	#subnav li a {
+		margin:0;
+		display:block;
+		padding: 0px 13px 0px 3px;
+		background: url(../images/subnav-bg2.png) top right no-repeat;
+	}
+	
+	#subnav li:first-child:hover:before { display: inline-block; width: 8px; height: 13px; content: ""; position: absolute; background: url(../images/secondary-left-bg.png) no-repeat; }
+	
+	#subnav li.previous-current a {
+		background: url(../images/subnav-bg-left2.png) top right no-repeat;
+	}
+
+	#subnav li:first-child a:hover 
+	#subnav li.previous-current a {
+		background: url(../images/subnav-bg-left2.png) top right no-repeat;
+	}
+	#subnav li.previous-current a:hover {
+		background: #d20a49 url(../images/subnav-bg-double2.png) top right no-repeat;
+	}
+	#subnav li.first a {
+		padding-left:10px;
+	}
+	#subnav li.last a {
+		background: url(../images/subnav-bg-farright2.png) top right no-repeat;
+	}
+	#subnav li a:hover,
+	#subnav li.current_page_item a {
+		background: #d20a49 url(../images/subnav-bg-right2.png) top right no-repeat;
+	}
+	
+	#subnav li.current_page_item.last a,
+	#subnav li.last:hover a {
+		background: #d20a49 url(../images/subnav-bg-farrightright.png) top right no-repeat;
+	}
+	#subnav li.last a:hover { }
+	#subnav li.current_page_item.previous-current a {
+		background: #d20a49 url(../images/subnav-bg-double2.png) top right no-repeat;
+	}
+	#subnav li span {
+		color:#FE9914;
+		margin:0 6px 0 9px;
+	}
+
+
+
 
 #content { margin-top: 15px; }
 #slides { position: relative; margin-bottom: 11px; }
@@ -195,6 +250,12 @@ line-height: 18px; font-weight: bold; }
 .form form input.btn:hover { color: #000; -webkit-transition: 200ms linear; -moz-transition: 200ms linear; -ms-transition: 200ms linear; -o-transition: 200ms linear; transition: 200ms linear; background-position: 0px -15px;}
 .form form input.btn:active { box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.1) inset, 0px 1px 2px rgba(0, 0, 0, 0.05); color: #ff6c20; }
 .form footer { margin-top: 0; }
+
+
+
+
+
+
 
 /* ==========================================================================
    Media Queries
