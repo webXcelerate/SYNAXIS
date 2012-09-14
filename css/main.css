@@ -60,12 +60,11 @@ header .secondary ul li a { color: #fff; text-decoration: none; margin: 0 4px; p
 		background: url(../images/subnav-bg2.png) top right no-repeat;
 	}
 	
-	#subnav li:first-child:hover:before { display: inline-block; width: 8px; height: 13px; content: ""; position: absolute; background: url(../images/secondary-left-bg.png) no-repeat; }
+	#subnav li:first-child:hover:before, #subnav li:first-child.current_page_item:before { display: inline-block; width: 8px; height: 13px; content: ""; position: absolute; background: url(../images/secondary-left-bg.png) no-repeat; }
 	
 	#subnav li.previous-current a {
 		background: url(../images/subnav-bg-left2.png) top right no-repeat;
 	}
-
 	#subnav li:first-child a:hover 
 	#subnav li.previous-current a {
 		background: url(../images/subnav-bg-left2.png) top right no-repeat;
