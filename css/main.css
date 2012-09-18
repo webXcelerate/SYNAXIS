@@ -40,6 +40,14 @@ header .primary ul li:first-child a { padding-right: 18px; margin-right: 0; }
 header .primary ul li:last-child { margin-left: 10px; }
 header .primary ul li:last-child:before { border-top: 5px solid transparent; border-bottom: 5px solid 
 transparent; border-left: 5px solid #fff; display: block; position: absolute; content: ""; margin-top: 12px; margin-left: -3px; }
+.lt-ie9 header .primary ul li:first-child, .lt-ie9 header .primary ul li:first-child a { margin: 0; padding: 0; }
+.lt-ie9 header .primary ul li:first-child:before, .lt-ie9 header .primary ul li:first-child:after { content: ""; display: none; }
+.lt-ie9 header .primary ul li:first-child a { width: 128px; height: 32px; display: block; text-align: center; background: url(../images/ie8-primary-bg.png) no-repeat; }
+
+
+.lt-ie9 header .primary ul li:last-child { }
+
+
 header h1 { margin: 0; padding: 0; display: inline; }
 header h1 a { width: 150px; height: 106px; display: block; background: url(../images/logo-top.png) no-repeat; margin: 16px 0 0 45px; padding: 0; float: left; }
 
@@ -47,8 +55,6 @@ header .secondary { float: right;  font-size: 12px; margin-top: 65px; margin-rig
 header .secondary ul { padding: 0; margin: 0; text-transform: uppercase; }
 header .secondary ul li { float: left; color: #fff; height: 13px; line-height: 13px; }
 header .secondary ul li a { color: #fff; text-decoration: none; margin: 0 4px; padding-right: 10px; }
-
-
 
 /* Navigation CSS */
 
@@ -61,6 +67,10 @@ header .secondary ul li a { color: #fff; text-decoration: none; margin: 0 4px; p
 	}
 	
 	#subnav li:first-child:hover:before, #subnav li:first-child.current_page_item:before { display: inline-block; width: 8px; height: 13px; content: ""; position: absolute; background: url(../images/secondary-left-bg.png) no-repeat; }
+	
+	.lt-ie9 #subnav { height: 13px; margin-left: -8px; padding-left: 8px; }
+	.lt-ie9 #subnav:hover { background: url(../images/secondary-left-bg.png) left center no-repeat; }
+	.lt-ie9 #subnav li.first a { padding-left: 2px; }
 	
 	#subnav li.previous-current a {
 		background: url(../images/subnav-bg-left2.png) top right no-repeat;
@@ -96,9 +106,6 @@ header .secondary ul li a { color: #fff; text-decoration: none; margin: 0 4px; p
 		margin:0 6px 0 9px;
 	}
 
-
-
-
 #content { margin-top: 15px; }
 #slides { position: relative; margin-bottom: 11px; }
 #slides .caption-top { position: absolute; z-index: 10; background: #000; color: #fff; padding: 2px 18px; margin-left: 45px; }
@@ -130,6 +137,7 @@ header .secondary ul li a { color: #fff; text-decoration: none; margin: 0 4px; p
 transparent; border-left: 5px solid #c70c46; position: absolute; content: ""; margin-top: 4px; margin-left: 3px; }
 .about a:hover { color: #fc6a1f; -webkit-transition: color 200ms linear; -moz-transition: color 200ms linear; -ms-transition: color 200ms linear; -o-transition: color 200ms linear; transition: color 200ms linear; }
 .program { background: url(../images/program-bg.png) no-repeat; }
+.program, .program p { text-decoration: none; }
 .program:hover { background: url(../images/program-bg-hover.png) no-repeat; }
 .program img, .register-online img, .supplier-partners img, .travel-accommodation img { margin: 10px 0 0 10px; }
 .program h2 { margin: 0 0 0 8px; color: #fff; font-size: 24px; display: inline-block; }
@@ -166,7 +174,7 @@ transparent; border-left: 5px solid #c70c46; position: absolute; content: ""; ma
 #slides-small .next { left: 293px; }
 #slides-small .slides_container { width:322px; height:189px; }
 #slides-small .slides_container div { width:322px; height:189px; display:block; }
-#slides-small .slides_container .caption { z-index:500; position:absolute; padding: 0; margin: 0; width: 135px; 	font-size:1.3em; line-height:1.33; color:#fff; }
+#slides-small .slides_container .caption { z-index:500; position:absolute; padding: 0; margin: 0; width: 130px; 	font-size:1.3em; line-height:1.33; color:#fff; }
 #slides-small .slides_container .caption h3 { margin: 0; padding: 0; font-family: sans-serif; font-size: 12px; }
 #slides-small .slides_container .caption p { margin: 0; padding: 0; font-family: sans-serif; font-size: 12px; color: #7d7d7d; }
 .upcoming-events aside { width: 145px; height: 189px; background-color: #000; position: relative; bottom: 189px; left: 332px; }
@@ -195,10 +203,10 @@ footer .extra-info li a { position: relative; bottom: 1px; color: #6c6c6c; }
 
 .template-two header .secondary ul li:first-child { background-color: #d20a49; }
 .template-two #masthead { position: relative; }
-.template-two #masthead .ir { position: absolute; z-index: 20; top: 20px; right: 4px; width: 32px; height: 32px; }
-.template-two #masthead .ir + .ir { top: 63px; }
-.template-two #masthead .ir:hover { background: url(../images/social.png) no-repeat; background-position-x: 1px; }
-.template-two #masthead .ir + .ir:hover { background: url(../images/social.png) -31px 0 no-repeat; }
+.template-two #masthead .ir { position: absolute; z-index: 20; top: 20px; right: 4px; width: 30px; height: 30px; background: url(../images/fb.png) }
+.template-two #masthead .ir:hover { background: url(../images/fb-hover.png) no-repeat; }
+.template-two #masthead .ir + .ir { top: 63px; background: url(../images/tw.png) no-repeat; }
+.template-two #masthead .ir + .ir:hover { background: url(../images/tw-hover.png) no-repeat; }
 .template-two #content { background-color: #fff; }
 .template-two #content aside { width: 260px; border-right: 1px solid #929191; margin-top: 28px; float: left; margin-bottom: 20px; }
 .template-two #corporate-retreat { width: 214px; height: 173px; background-color: #504848; margin: 0 auto; position: relative; }
@@ -219,6 +227,12 @@ line-height: 18px; font-weight: bold; }
 .form #masthead .ir + .ir { top: 63px; }
 .form #masthead .ir:hover { background: url(../images/social.png) no-repeat; background-position-x: 1px; }
 .form #masthead .ir + .ir:hover { background: url(../images/social.png) -31px 0 no-repeat; }
+
+.form #masthead .ir { position: absolute; z-index: 20; top: 20px; right: 4px; width: 30px; height: 30px; background: url(../images/fb.png) }
+.form #masthead .ir:hover { background: url(../images/fb-hover.png) no-repeat; }
+.form #masthead .ir + .ir { top: 63px; background: url(../images/tw.png) no-repeat; }
+.form #masthead .ir + .ir:hover { background: url(../images/tw-hover.png) no-repeat; }
+
 .form form { background: #808080; padding: 10px; width: 854px; margin: 50px auto;}
 .form form fieldset { border: none; margin-bottom: 10px; }
 .form form legend { color: #fff; font-size: 16px; font-weight: bold; padding-bottom: 10px; text-shadow:0 0 5px #000, 0 0 1px transparent; }
