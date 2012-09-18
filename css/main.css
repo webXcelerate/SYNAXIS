@@ -38,9 +38,9 @@ header .primary ul li:first-child:before, header .primary ul li:first-child:afte
 header .primary ul li:first-child:after { display: inline; background: url(../images/primary-right-bg.png) no-repeat; }
 header .primary ul li:first-child a { padding-right: 18px; margin-right: 0; }
 header .primary ul li:last-child { padding-left: 10px; }
-header .primary ul li:last-child:before { border-top: 5px solid transparent; border-bottom: 5px solid 
-transparent; border-left: 5px solid #fff; display: block; position: absolute; content: ""; margin-top: 12px; margin-left: -3px; }
-.lt-ie9 header .primary ul li:last-child { background: url(../images/login-bg.png) no-repeat; background-position-x: 3px; background-position-y: 13px; }
+header .primary ul li:last-child:before { border-top: 5px solid transparent; border-bottom: 5px solid transparent; border-left: 5px solid #fff; display: block; position: absolute; content: ""; margin-top: 12px; margin-left: -3px; }
+.lt-ie9 header .primary ul li.last { background: url(../images/login-bg.png) no-repeat; background-position-x: 3px; background-position-y: 13px; }
+.lt-ie9 header .primary ul li.last a { padding-left: 10px; }
 .lt-ie9 header .primary ul li:first-child, .lt-ie9 header .primary ul li:first-child a { margin: 0; padding: 0; }
 .lt-ie9 header .primary ul li:first-child:before, .lt-ie9 header .primary ul li:first-child:after { content: ""; display: none; }
 .lt-ie9 header .primary ul li:first-child a { width: 128px; height: 32px; display: block; text-align: center; background: url(../images/ie8-primary-bg.png) no-repeat; }
@@ -51,7 +51,7 @@ header .secondary ul { padding: 0; margin: 0; text-transform: uppercase; }
 header .secondary ul li { float: left; color: #fff; height: 13px; line-height: 13px; }
 header .secondary ul li a { color: #fff; text-decoration: none; margin: 0 4px; padding-right: 10px; }
 #subnav li:first-child { background-color: transparent; }
-#subnav li a { margin:0; display:block; padding: 0px 13px 0px 3px; background: url(../images/subnav-bg2.png) top right no-repeat; }
+#subnav li a { margin:0; display:block; padding: 0px 17px 0px 3px; background: url(../images/subnav-bg2.png) top right no-repeat; }
 #subnav { height: 13px; margin-left: -8px; padding-left: 8px; background-position: left center; background-repeat: no-repeat; }
 #subnav li.first a { padding-left: 2px; }
 #subnav li.previous-current a { background: url(../images/subnav-bg-left2.png) top right no-repeat; }
@@ -182,16 +182,10 @@ line-height: 18px; font-weight: bold; }
 
 .form #content { background-color: #fff; }
 .form #masthead { position: relative; }
-.form #masthead .ir { position: absolute; z-index: 20; top: 20px; right: 4px; width: 32px; height: 32px; }
-.form #masthead .ir + .ir { top: 63px; }
-.form #masthead .ir:hover { background: url(../images/social.png) no-repeat; background-position-x: 1px; }
-.form #masthead .ir + .ir:hover { background: url(../images/social.png) -31px 0 no-repeat; }
-
 .form #masthead .ir { position: absolute; z-index: 20; top: 20px; right: 4px; width: 30px; height: 30px; background: url(../images/fb.png) }
 .form #masthead .ir:hover { background: url(../images/fb-hover.png) no-repeat; }
 .form #masthead .ir + .ir { top: 63px; background: url(../images/tw.png) no-repeat; }
 .form #masthead .ir + .ir:hover { background: url(../images/tw-hover.png) no-repeat; }
-
 .form form { background: #808080; padding: 10px; width: 854px; margin: 50px auto;}
 .form form fieldset { border: none; margin-bottom: 10px; }
 .form form legend { color: #fff; font-size: 16px; font-weight: bold; padding-bottom: 10px; text-shadow:0 0 5px #000, 0 0 1px transparent; }
@@ -199,15 +193,13 @@ line-height: 18px; font-weight: bold; }
 .form form ul li { background: rgb(166, 166, 166); border: 2px solid #f1f1f1; -moz-border-radius: 3px; -webkit-border-radius: 3px; -khtml-border-radius: 3px; border-radius: 3px; line-height: 30px; list-style: none; padding: 5px 10px; margin-bottom: 2px; font-size: 12px; }
 .form form .details-personal label { width: 150px; }
 .form form label { float: left; font-size: 13px; width: 350px; }
-
 .form form .long-text { line-height: 15px; }
 .form form .inputradiocheck + .inputradiocheck { margin-left: 50px; }
 .form form input:not([type="radio"]), .form form textarea { background: #ffffff; border: none; -moz-border-radius: 3px; -webkit-border-radius: 3px; -khtml-border-radius: 3px; border-radius: 3px; font-family: sans-serif; font-size: 12px; outline: none; padding: 5px; width: 300px; }
 .form form input[type="checkbox"] { width: 20px; }
 .form form textarea { height: 50px; }
-.form form fieldset:last-child { text-align: center; }
-.form form input.btn { font-size: 16px; line-height: normal; padding: 9px 14px 9px; -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px; border: 1px solid #ccc; border-bottom-color: #bbb; -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05); -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05); box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05); border: 1px solid #ccc; background-color: hsl(345, 72%, 44%) !important; background-repeat: repeat-x; filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#de355f", endColorstr="#c01f47"); background-image: -khtml-gradient(linear, left top, left bottom, from(#de355f), to(#c01f47)); background-image: -moz-linear-gradient(top, #de355f, #c01f47); background-image: -ms-linear-gradient(top, #de355f, #c01f47); background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #de355f), color-stop(100%, #c01f47)); background-image: -webkit-linear-gradient(top, #de355f, #c01f47); background-image: -o-linear-gradient(top, #de355f, #c01f47); background-image: linear-gradient(#de355f, #c01f47); border-color: #c01f47 #c01f47 hsl(345, 72%, 41.5%); color: #fff; text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.16); -webkit-font-smoothing: antialiased;
-}
+.form form fieldset.last { text-align: center; }
+.form form input.btn { font-size: 16px; line-height: normal; padding: 9px 14px 9px; -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px; border: 1px solid #ccc; border-bottom-color: #bbb; -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05); -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05); box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05); border: 1px solid #ccc; background-color: hsl(345, 72%, 44%) !important; background-repeat: repeat-x; filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#de355f", endColorstr="#c01f47"); background-image: -khtml-gradient(linear, left top, left bottom, from(#de355f), to(#c01f47)); background-image: -moz-linear-gradient(top, #de355f, #c01f47); background-image: -ms-linear-gradient(top, #de355f, #c01f47); background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #de355f), color-stop(100%, #c01f47)); background-image: -webkit-linear-gradient(top, #de355f, #c01f47); background-image: -o-linear-gradient(top, #de355f, #c01f47); background-image: linear-gradient(#de355f, #c01f47); border-color: #c01f47 #c01f47 hsl(345, 72%, 41.5%); color: #fff; text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.16); -webkit-font-smoothing: antialiased;  width: 300px; }
 .form form input.btn:hover { color: #000; -webkit-transition: 200ms linear; -moz-transition: 200ms linear; -ms-transition: 200ms linear; -o-transition: 200ms linear; transition: 200ms linear; background-position: 0px -15px;}
 .form form input.btn:active { box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.1) inset, 0px 1px 2px rgba(0, 0, 0, 0.05); color: #ff6c20; }
 .form footer { margin-top: 0; }
