@@ -72,7 +72,30 @@ jQuery(document).ready(function($){
   				$('#subnav li.current_page_item').next().addClass('next-current');
   			}
   		});
-      
+  		
+  		  
+  $("#subnav li:first-child").on({
+    mouseenter: function(){
+      $(this).parent().css('background-image', 'url(./images/secondary-left-bg.png)');
+    },
+    mouseleave: function(){
+      $(this).parent().css('background-image', 'none');
+    }
   });
+  
+  $("#subnav li:first-child.current_page_item").parent().css('background-image', 'url(./images/secondary-left-bg.png)');
+  
+  $("#subnav li:first-child.current_page_item").on({
+    mouseenter: function(){
+      $(this).parent().css('background-image', 'url(./images/secondary-left-bg.png)');
+    },
+    mouseleave: function(){
+      $(this).parent().css('background-image', 'url(./images/secondary-left-bg.png)');
+    }
+  });
+
+  });
+  
+
   
 });

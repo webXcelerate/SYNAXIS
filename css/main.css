@@ -37,74 +37,29 @@ header .primary ul li:first-child { background: url(../images/primary-middle-bg.
 header .primary ul li:first-child:before, header .primary ul li:first-child:after { display: inline-block; width: 18px; height: 32px; background: url(../images/primary-left-bg.png) no-repeat; content: ""; position: absolute; margin-left: -18px; }
 header .primary ul li:first-child:after { display: inline; background: url(../images/primary-right-bg.png) no-repeat; }
 header .primary ul li:first-child a { padding-right: 18px; margin-right: 0; }
-header .primary ul li:last-child { margin-left: 10px; }
+header .primary ul li:last-child { padding-left: 10px; }
 header .primary ul li:last-child:before { border-top: 5px solid transparent; border-bottom: 5px solid 
 transparent; border-left: 5px solid #fff; display: block; position: absolute; content: ""; margin-top: 12px; margin-left: -3px; }
+.lt-ie9 header .primary ul li:last-child { background: url(../images/login-bg.png) no-repeat; background-position-x: 3px; background-position-y: 13px; }
 .lt-ie9 header .primary ul li:first-child, .lt-ie9 header .primary ul li:first-child a { margin: 0; padding: 0; }
 .lt-ie9 header .primary ul li:first-child:before, .lt-ie9 header .primary ul li:first-child:after { content: ""; display: none; }
 .lt-ie9 header .primary ul li:first-child a { width: 128px; height: 32px; display: block; text-align: center; background: url(../images/ie8-primary-bg.png) no-repeat; }
-
-
-.lt-ie9 header .primary ul li:last-child { }
-
-
 header h1 { margin: 0; padding: 0; display: inline; }
 header h1 a { width: 150px; height: 106px; display: block; background: url(../images/logo-top.png) no-repeat; margin: 16px 0 0 45px; padding: 0; float: left; }
-
 header .secondary { float: right;  font-size: 12px; margin-top: 65px; margin-right: 20px; }
 header .secondary ul { padding: 0; margin: 0; text-transform: uppercase; }
 header .secondary ul li { float: left; color: #fff; height: 13px; line-height: 13px; }
 header .secondary ul li a { color: #fff; text-decoration: none; margin: 0 4px; padding-right: 10px; }
-
-/* Navigation CSS */
-
-  #subnav li:first-child { background-color: transparent; }
-	#subnav li a {
-		margin:0;
-		display:block;
-		padding: 0px 13px 0px 3px;
-		background: url(../images/subnav-bg2.png) top right no-repeat;
-	}
-	
-	#subnav li:first-child:hover:before, #subnav li:first-child.current_page_item:before { display: inline-block; width: 8px; height: 13px; content: ""; position: absolute; background: url(../images/secondary-left-bg.png) no-repeat; }
-	
-	.lt-ie9 #subnav { height: 13px; margin-left: -8px; padding-left: 8px; }
-	.lt-ie9 #subnav:hover { background: url(../images/secondary-left-bg.png) left center no-repeat; }
-	.lt-ie9 #subnav li.first a { padding-left: 2px; }
-	
-	#subnav li.previous-current a {
-		background: url(../images/subnav-bg-left2.png) top right no-repeat;
-	}
-	#subnav li:first-child a:hover 
-	#subnav li.previous-current a {
-		background: url(../images/subnav-bg-left2.png) top right no-repeat;
-	}
-	#subnav li.previous-current a:hover {
-		background: #d20a49 url(../images/subnav-bg-double2.png) top right no-repeat;
-	}
-	#subnav li.first a {
-		padding-left:10px;
-	}
-	#subnav li.last a {
-		background: url(../images/subnav-bg-farright2.png) top right no-repeat;
-	}
-	#subnav li a:hover,
-	#subnav li.current_page_item a {
-		background: #d20a49 url(../images/subnav-bg-right2.png) top right no-repeat;
-	}
-	
-	#subnav li.current_page_item.last a,
-	#subnav li.last:hover a {
-		background: #d20a49 url(../images/subnav-bg-farrightright.png) top right no-repeat;
-	}
-	#subnav li.last a:hover { }
-	#subnav li.current_page_item.previous-current a {
-		background: #d20a49 url(../images/subnav-bg-double2.png) top right no-repeat;
-	}
-	#subnav li span {
-		color:#FE9914;
-		margin:0 6px 0 9px;
-	}
+#subnav li:first-child { background-color: transparent; }
+#subnav li a { margin:0; display:block; padding: 0px 13px 0px 3px; background: url(../images/subnav-bg2.png) top right no-repeat; }
+#subnav { height: 13px; margin-left: -8px; padding-left: 8px; background-position: left center; background-repeat: no-repeat; }
+#subnav li.first a { padding-left: 2px; }
+#subnav li.previous-current a { background: url(../images/subnav-bg-left2.png) top right no-repeat; }
+#subnav li.previous-current a:hover { background: #d20a49 url(../images/subnav-bg-double2.png) top right no-repeat; }
+#subnav li.last a { background: url(../images/subnav-bg-farright2.png) top right no-repeat; }
+#subnav li a:hover, #subnav li.current_page_item a { background: #d20a49 url(../images/subnav-bg-right2.png) top right no-repeat; }
+#subnav li.current_page_item.last a, #subnav li.last:hover a { background: #d20a49 url(../images/subnav-bg-farrightright.png) top right no-repeat; }
+#subnav li.current_page_item.previous-current a { background: #d20a49 url(../images/subnav-bg-double2.png) top right no-repeat; }
 
 #content { margin-top: 15px; }
 #slides { position: relative; margin-bottom: 11px; }
@@ -180,12 +135,16 @@ transparent; border-left: 5px solid #c70c46; position: absolute; content: ""; ma
 .upcoming-events aside { width: 145px; height: 189px; background-color: #000; position: relative; bottom: 189px; left: 332px; }
 .upcoming-events aside h2 { color: #c70c46; font-size: 22px; padding: 0; margin: 0; margin-left: 6px; padding-top: 17px; line-height: 1.1em; }
 .upcoming-events aside span { color: #ff6c20; font-size: 32px; padding: 0; margin: 0; }
+@media only screen and (device-width: 768px) {
+  .upcoming-events aside span { font-size: 30px; }
+}
 .read-more { font-family: Arial, sans-serif; font-weight: bold; color: #7d7d7d; font-size: 12px; width: 365px; }
 .read-more p { margin-bottom: 0; }
 .read-more article a { color: #c70c46; text-decoration: none; }
 .read-more article a:after { border-top: 4px solid transparent; border-bottom: 4px solid transparent; border-left: 4px solid #c70c46; position: absolute; content: ""; margin-top: 4px; margin-left: 5px;} 
 .read-more hr { border-top: 1px solid #585656; margin: 10px 0; }
 .read-more article a:hover { color: #fc6a1f; -webkit-transition: color 200ms linear; -moz-transition: color 200ms linear; -ms-transition: color 200ms linear; -o-transition: color 200ms linear; transition: color 200ms linear; }
+
 footer { background: url(../images/footer-top-bg.png) repeat-x #262626;  margin-top: 20px; padding-bottom: 40px; }
 #sponsors { height: 140px; }
 #sponsors h3 { margin: 0; color: #fff; font-family: Arial, sans-serif; font-size: 12px; padding: 20px 0 0 40px; }
