@@ -51,6 +51,7 @@ jQuery(document).ready(function($){
         });
         $(elem).height(minHeight); // set largest height
       }
+      
       minHeight('footer ul')
       
       $(function(){
@@ -95,7 +96,32 @@ jQuery(document).ready(function($){
   });
 
   });
-  
-
-  
 });
+
+// executes when complete page is fully loaded, including all frames, objects and images
+$(window).load(function() {
+ function minHeight2(elem1, elem2) { // min height function to set all heights equal to heighest value
+    minHeight2 = 0;
+    var elem1 = $(elem1);
+    var elem2 = $(elem2);
+
+    if ($(elem1).height() > $(elem2).height()) {
+      minHeight2 = $(elem1).height();
+    } else {
+      minHeight2 = $(elem2).height();
+    }
+    $(elem1).height(minHeight2); 
+    $(elem2).height(minHeight2); 
+  }
+  
+  console.log("Aside " + $('aside').height());
+  console.log("Verbage " + $('.verbage').height());
+  minHeight2('aside', '.verbage');
+});
+
+
+
+
+
+
+
